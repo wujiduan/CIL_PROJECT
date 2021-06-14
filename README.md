@@ -13,4 +13,7 @@ git clone link_for_repository.git
 source init_leonhard.sh
 ```
 
-4. 
+4. Submit the jobs, parameters specify the number of the gpus and the memory we request, and the time limit we set for our task
+```
+bsubs -R "rusage[ngpus_excl_p=1,mem=64000]" -W 1:00 baseline1.ipynb
+```
