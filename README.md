@@ -6,7 +6,7 @@
 ```
 git clone link_for_repository.git
 ```
-*If the CIL_PROJECT has been updated, you need to clone the repository again. You can remove the old one with rm -rf CIL_PROJECT*
+*If the CIL_PROJECT has been updated, you need to clone the repository again. You can remove the old one with 'rm -rf CIL_PROJECT'*
 
 3. Set up the virtual environment and modules
 ```
