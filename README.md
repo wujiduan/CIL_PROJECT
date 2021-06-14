@@ -17,3 +17,5 @@ source init_leonhard.sh
 ```
 bsubs -R "rusage[ngpus_excl_p=1,mem=64000]" -W 1:00 baseline1.ipynb
 ```
+
+5. bjobs - command to see if the job is running or pending, bpeek job_id - command to monitor the job
