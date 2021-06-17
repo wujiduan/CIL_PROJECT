@@ -4,3 +4,8 @@ source venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip3 install -r requirements_leonhard.txt
 export PYTHONPATH=$PYTHONPATH:~/CIL_PROJECT
+touch .editorconfig
+touch pyproject.toml
+touch .isort.cfg
+touch setup.cfg
+touch tox.ini
