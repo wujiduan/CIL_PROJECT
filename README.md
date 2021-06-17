@@ -8,7 +8,7 @@ You can use winSCP to upload datasets to leonhard cluster.
 ```
 git clone link_for_repository.git
 ```
-*If the CIL_PROJECT has been updated, you need to clone the repository again. You can remove the old one with 'rm -rf CIL_PROJECT'*
+*If the CIL_PROJECT has been updated, you need to clone the repository again. You can remove the old one with 'rm -rf CIL_PROJECT'. Or you can use winSCP to update and modify the codes in a more convenient way.*
 
 3. Set up the virtual environment and modules
 ```
