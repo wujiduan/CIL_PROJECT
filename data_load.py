@@ -16,7 +16,7 @@ CUTOFF = 0.25  # minimum average brightness for a mask patch to be classified as
 # unzip the dataset, split it and organize it in folders
 if not os.path.isdir('validation'):  # make sure this has not been executed yet
   try:
-          #!unzip cil-road-segmentation-2021.zip
+          !unzip cil-road-segmentation-2021.zip
           !mv training/training/* training
           !rm -rf training/training
           !mkdir validation
