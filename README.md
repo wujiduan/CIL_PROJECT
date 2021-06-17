@@ -21,5 +21,7 @@ source init_leonhard.sh
 bsub -R "rusage[ngpus_excl_p=1,mem=10000]" -W 1:00 baseline1.ipynb
 ```
 
-5. 'bjobs' - command to see if the job is running or pending, 'bpeek job_id' - command to monitor the job
+5. 'bjobs' - command to see if the job is running or pending; 'bpeek job_id' - command to monitor the job; 'vim lsf.oJobID' - command to read the output file for the job; If you use winSCP, you can observe and read the file directly.
+
+
 
