@@ -18,8 +18,10 @@ source init_leonhard.sh
 
 4. Submit the jobs, parameters specify the number of the gpus and the memory we request, and the time limit we set for our task
 ```
-bsub -R "rusage[ngpus_excl_p=1,mem=10000]" -W 1:00 ~/CIL_PROJECT/data_load.py
+bsub -R "rusage[ngpus_excl_p=1,mem=10000]" -W 1:00 python data_load.py
 ```
+
+*Don't use a root directory for the submitted file such as ~/CIL_PROJECT/data_load.py, this will cause the 'permission denied' error*
 
 5. 'bjobs' - command to see if the job is running or pending; 'bpeek job_id' - command to monitor the job; 'vim lsf.oJobID' - command to read the output file for the job; If you use winSCP, you can observe and read the file directly.
 
