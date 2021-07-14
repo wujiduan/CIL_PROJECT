@@ -23,7 +23,7 @@ source init_leonhard.sh
 
 4. Submit the jobs, parameters specify the number of the gpus and the memory we request, and the time limit we set for our task
 ```
-bsub -oo nexist/haha.out -R "rusage[ngpus_excl_p=1,mem=20000]" -W 1:00 python baseline1.py 
+bsub -oo nexist/haha.out -R "rusage[ngpus_excl_p=1,mem=20000]" -W 24:00 python baseline1.py 
 ```
 
 *The -oo command with a nonexistent folder trick will make the leonhard send you an email once the job is finished
