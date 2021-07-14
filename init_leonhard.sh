@@ -3,6 +3,7 @@ python -m venv venv
 source venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip3 install -r requirements_leonhard.txt
+pip install git+https://github.com/lucasb-eyer/pydensecrf.git
 export PYTHONPATH=$PYTHONPATH:~/CIL_PROJECT
 touch .editorconfig
 touch pyproject.toml
