@@ -18,8 +18,10 @@ source init_leonhard.sh
 
 4. Submit the jobs, parameters specify the number of the gpus and the memory we request, and the time limit we set for our task
 ```
-bsub -R "rusage[ngpus_excl_p=1,mem=10000]" -W 1:00 python data_load.py
+bsub -oo nexist/haha.out -R "rusage[ngpus_excl_p=1,mem=20000]" -W 1:00 python baseline1.py 
 ```
+
+*The -oo command with a nonexistent folder trick will make the leonhard send you an email once the job is finished
 
 *Don't use a root directory for the submitted file such as ~/CIL_PROJECT/data_load.py, this will cause the 'permission denied' error*
 
