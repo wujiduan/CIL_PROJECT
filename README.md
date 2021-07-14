@@ -4,10 +4,15 @@ You can use winSCP to upload datasets to leonhard cluster.
 
 1. Log in the Leonhard cluster
 
-2. Clone the github repository: 
+2. Clone the github repository and change the directory to the repository: 
 ```
 git clone link_for_repository.git
 ```
+
+```
+cd CIL_PROJECT
+```
+
 *If the CIL_PROJECT has been updated, you need to clone the repository again. You can remove the old one with 'rm -rf CIL_PROJECT'. Or you can use winSCP to update and modify the codes in a more convenient way.*
 
 3. Set up the virtual environment and modules
