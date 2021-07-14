@@ -905,16 +905,16 @@ val_dataset = ImageDataset('/cluster/home/jiduwu/CIL_PROJECT/validation',
                            use_patches=False,
                            resize_to=(384, 384))
 train_dataloader = torch.utils.data.DataLoader(train_dataset,
-                                               batch_size=8,
+                                               batch_size=4,
                                                shuffle=True)
 val_dataloader = torch.utils.data.DataLoader(val_dataset,
-                                             batch_size=8,
+                                             batch_size=4,
                                              shuffle=True)
 model = UNet().to(device)
 loss_fn = nn.BCELoss()
 metric_fns = {'acc': accuracy_fn, 'patch_acc': patch_accuracy_fn}
 optimizer = torch.optim.Adam(model.parameters())
-n_epochs = 1
+n_epochs = 60
 train(train_dataloader, val_dataloader, model, loss_fn, metric_fns, optimizer,
       n_epochs)
 # device = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -957,10 +957,7 @@ test_pred = np.concatenate(test_pred, 0)
 test_pred = np.moveaxis(test_pred, 1, -1)  # CHW to HWC
 test_pred = np.stack([cv2.resize(img, dsize=size) for img in test_pred],
                      0)  # resize to original shape
-ori_test_images = [
-    cv2.resize(cv2.imread(temp_name), dsize=(384, 384))
-    for temp_name in test_filenames
-]
+ori_test_images = [cv2.imread(tmp_name) for tmp_name in test_filenames]
 
 # now compute labels without crf post-processing
 test_pred_ncrf = test_pred.reshape(
