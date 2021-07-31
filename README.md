@@ -38,7 +38,11 @@ bsub -oo nexist/haha.out -R "rusage[ngpus_excl_p=1,mem=20000]" -W 24:00 python b
 
 To replicate our results, you need the following steps
 
-1. Add the extra data in *Additional data and data preprocessing*, make sure they are in the correct corresponding directory. Considering running transformations is a rather time-consuming job, we provide the additional dataset after applying transformations, by which you can directly get the result from this step by downloading it from https://polybox.ethz.ch/index.php/s/JG4gG12FHBdn3Md (what we provide in this link are "Original + Additional + Original Transformed + Additional Transformed" images, and a validation set has already been randomly sampled, which is just a result from this step). *At the same time we also provide you a link: https://polybox.ethz.ch/index.php/s/WYo97Fo0GbYB6tu to get the additional images without any transformation, and if you want to reproduce the results of this step, please run transform.ipynb. Please make sure that all folder paths are correct. Here I would like to explain again that because the all transformations are random, the image quality may fluctuate and then affect the final result, but this is reasonable.*
+1. Add the extra data in *Additional data and data preprocessing*, make sure they are in the correct corresponding directory. Considering running transformations is a rather time-consuming job, we provide the additional dataset after applying transformations, by which you can directly get the result from this step by downloading it from https://polybox.ethz.ch/index.php/s/JG4gG12FHBdn3Md (what we provide in this link are "Original + Additional + Original Transformed + Additional Transformed" images, and a validation set has already been randomly sampled, which is just a result from this step). 
+
+   At the same time we also provide you a link: https://polybox.ethz.ch/index.php/s/WYo97Fo0GbYB6tu to get the additional images without any transformation, and if you want to reproduce the results of this step, please run transform.ipynb. Please make sure that all folder paths are correct. Here I would like to explain again that because the all transformations are random, the image quality may fluctuate and then affect the final result, but this is reasonable.
+   
+   
    The password for both of the link is: CIL2021
 
 2. All the results can be obtained by run the (similar) command in step 4 above. :)
