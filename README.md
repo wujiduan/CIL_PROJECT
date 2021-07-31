@@ -32,7 +32,7 @@ bsub -oo nexist/haha.out -R "rusage[ngpus_excl_p=1,mem=20000]" -W 24:00 python b
 
 5. 'bjobs' - command to see if the job is running or pending; 'bpeek job_id' - command to monitor the job; 'vim lsf.oJobID' - command to read the output file for the job; If you use winSCP, you can observe and read the file directly.
 
-###Our repository is divided into three modules: CRF-postprocessing, Additional data and data preprocessing, and Model
+## Our repository is divided into three modules: CRF-postprocessing, Additional data and data preprocessing, and Model
 
 All the results can be obtained by run the (similar) command in step 4 above. :)
 
