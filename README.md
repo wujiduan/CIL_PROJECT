@@ -42,6 +42,6 @@ To replicate our results, you need the following steps
 
 2. All the results can be obtained by run the (similar) command in step 4 above. :)
 
-3. For time efficiency, some of our results are obtained by loading models we trained before, and the best model can be accessed through this link https://drive.google.com/file/d/1rVrhZfrLUrZ7JxdU3mEfTUFC2A-4nhaJ/view?usp=sharing
+3. For higher time efficiency, some of our results are obtained by loading models we trained before, and the best model can be accessed through this link https://drive.google.com/file/d/1rVrhZfrLUrZ7JxdU3mEfTUFC2A-4nhaJ/view?usp=sharing.
 
 
