@@ -1,5 +1,7 @@
 # CIL_PROJECT
 
+## Setting
+
 You can use winSCP to upload datasets to leonhard cluster.
 
 1. Log in the Leonhard cluster
