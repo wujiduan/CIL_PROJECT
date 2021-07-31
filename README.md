@@ -43,7 +43,7 @@ To replicate our results, you need the following steps
    At the same time we also provide you a link: https://polybox.ethz.ch/index.php/s/WYo97Fo0GbYB6tu to get the additional images without any transformation, and if you want to reproduce the results of this step, please run transform.ipynb. Please make sure that all folder paths are correct. Here I would like to explain again that because the all transformations are random, the image quality may fluctuate and then affect the final result, but this is reasonable.
    
    The password for both of the link is: CIL2021
-2. All the results can be obtained by run the (similar) command in step 4 above. :) Notice that setting the environment for crfasrnn can take more effort - please refer to the repository here https://github.com/sadeepj/crfasrnn_pytorch
+2. All the results can be obtained by run the (similar) command in step 4 above. :) Please note that setting the environment for crfasrnn can take more effort - please refer to the repository here https://github.com/sadeepj/crfasrnn_pytorch
 
 3. For higher time efficiency, some of our results are obtained by loading models we trained before, and the best model can be accessed through this link https://drive.google.com/file/d/1rVrhZfrLUrZ7JxdU3mEfTUFC2A-4nhaJ/view?usp=sharing.
 
