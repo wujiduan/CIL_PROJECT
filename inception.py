@@ -221,7 +221,7 @@ train(train_dataloader, val_dataloader, model, loss_fn, metric_fns, optimizer,
       n_epochs)
 folder_name = '/cluster/home/haishi/cil/CIL_PROJECT'
 torch.save(
-    model.state_dict(), folder_name + '/model/inception_haitong' + str(n_epochs) + '_val' + '.pt')
+    model.state_dict(), folder_name + '/model/inception' + str(n_epochs) + '_val' + '.pt')
 
 
 # predict on test set
